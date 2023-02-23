@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mainGameStyle.css" type="text/css">
+    <title>Main Game</title>
+</head>
+<body>
+    <div class="background">
+        <header>
+            <div id="scoreBoard">
+                <span id="liveScore" class="scoreBoardText">Score: 000</span>
+                <span id="highScore" class="scoreBoardText2">High Score: 000</span>
+            </div>
+            <div id="greyTime"></div>
+            <div id="time"></div>
+            <nav>
+                <div>
+                    <span id="restart">
+                         <a href="MainGame.html">
+                             <img src="images/restart 1.png" alt="Restart Button">
+                         </a>
+                    </span>
+                </div>
+            </nav>
+        </header>
+        <section>
+            <div id="gameSection">
+                 <span>
+                    <button id="firstCardLabel" class="cardStyle" onclick="flipCard(event, 'rotateCard1')"></button>
+
+                    <button id="secondCardLabel" class="cardStyle" onclick="flipCard(event, 'rotateCard2')"></button>
+
+                    <button id="thirdCardLabel" class="cardStyle" onclick="flipCard(event, 'rotateCard3')"></button>
+
+                    <button id="fourthCardLabel" class="cardStyle" onclick="flipCard(event, 'rotateCard4')"></button>
+
+                    <button id="fifthCardLabel" class="cardStyle" onclick="flipCard(event, 'rotateCard5')"></button>
+
+                    <button id="sixthCardLabel" class="cardStyle" onclick="flipCard(event, 'rotateCard6')"></button>
+                 </span>
+                 <span>
+                    <button id="firstCardSecondRowLabel" class="cardStyle" onclick="flipCard(event, 'rotateCard7')"></button>
+
+                    <button id="secondCardSecondRowLabel" class="cardStyle"onclick="flipCard(event, 'rotateCard8')"></button>
+
+                    <button id="thirdCardSecondRowLabel" class="cardStyle"onclick="flipCard(event, 'rotateCard9')"></button>
+
+                    <button id="fourthCardSecondRowLabel" class="cardStyle" onclick="flipCard(event, 'rotateCard1')"></button>
+
+                    <button id="fifthCardSecondRowLabel" class="cardStyle" onclick="flipCard(event, 'rotateCard6')"></button>
+
+                    <button id="sixthCardSecondRowLabel" class="cardStyle" onclick="flipCard(event, 'rotateCard9')"></button>
+                 </span>
+                 <span>
+                    <button id="firstCardThirdRowLabel" class="cardStyle" onclick="flipCard(event, 'rotateCard8')"></button>
+
+                    <button id="secondCardThirdRowLabel" class="cardStyle" onclick="flipCard(event, 'rotateCard7')"></button>
+
+                    <button id="thirdCardThirdRowLabel" class="cardStyle" onclick="flipCard(event, 'rotateCard2')"></button>
+
+                    <button id="fourthCardThirdRowLabel" class="cardStyle" onclick="flipCard(event, 'rotateCard5')"></button>
+
+                    <button id="fifthCardThirdRowLabel" class="cardStyle" onclick="flipCard(event, 'rotateCard3')"></button>
+
+                    <button id="sixthCardThirdRowLabel" class="cardStyle" onclick="flipCard(event, 'rotateCard4')"></button>
+                 </span>
+            </div>
+        </section>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

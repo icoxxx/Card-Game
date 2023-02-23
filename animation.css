@@ -1,0 +1,30 @@
+@keyframes squareToCircle {
+    0% {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+
+    }
+    
+
+    100%{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        border-radius: 50%;
+
+    }
+}
+
+.toBeAnimated{
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-color: transparent;
+      animation-name: squareToCircle;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+
+}
